@@ -44,6 +44,25 @@ body{
 }
 
 
+.titulo1 {
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 16ch;
+
+    animation: typing 2s steps(18), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+
+@keyframes blink {
+    50% {border-color: transparent;}
+}
+
+
+
 @media(max-width: 991px){
     .sidebar{
         background-color: rgba(255,255,255,0.8);
