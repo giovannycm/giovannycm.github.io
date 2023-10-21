@@ -7,6 +7,29 @@ body{
     
 }
 
+.footer {
+    background-color: black;
+}
+
+.footer a {
+    font-size: 2.5rem;
+}
+
+/* Añade estilos para centrar verticalmente el contenido del footer */
+.footer p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer .btn {
+    font-size: 2.5rem;
+    color: white;
+}
+
+
+
+
 
 @media(max-width: 991px){
     .sidebar{
