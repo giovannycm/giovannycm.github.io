@@ -7,9 +7,6 @@ body{
     
 }
 
-.footer {
-    background-color: black;
-}
 
 .footer a {
     font-size: 2.5rem;
@@ -24,11 +21,20 @@ body{
 
 .footer .btn {
     font-size: 2.5rem;
-    color: white;
+    
 }
 
+.facebook{
+    color: rgba(66,103,178,0.9);
+}
 
+.whats{
+    color: rgba(37,211,102,0.9);
+}
 
+.insta{
+    color: rgba(88,81,216,0.9);
+}
 
 
 @media(max-width: 991px){
