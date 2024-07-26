@@ -1,11 +1,33 @@
-.index{
-    background: url("https://giovannycm.github.io/img/Chichen.png") rgba(0,0,0,0.3);
-    background-blend-mode: multiply;
-    background-position:  center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    
+html, body {
+    height: 100%;
+    margin: 0;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 60px; /* Ajusta esto para que coincida con la altura de tu footer */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Ajusta el color de fondo si es necesario */
+    padding: 1rem;
+    text-align: center; /* Opcional: centrar el contenido del footer */
+}
+
+
+
+
+
+
 
 .titulo1 {
     font-size: 1.5em;
@@ -15,6 +37,18 @@
     font-size: 1.2em;
 }
 
+.nav-link{
+    color: black;
+}
+
+.active{
+    color: black;
+}
+
+.navbar-brand{
+    font-size: 1.5em;
+    color: black;
+}
 .footer a {
     font-size: 2.5rem;
 }
