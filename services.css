@@ -25,7 +25,21 @@ main {
 
 
 
+.navbar-logo {
+    height: 200px; /* Ajusta la altura según sea necesario */
+    width: auto; /* Mantiene la relación de aspecto */
+    /* Alternativamente, puedes usar width: 100px; para establecer un ancho fijo */
+}
 
+/* Opcional: si deseas ajustar la imagen dentro del offcanvas también */
+.offcanvas-header img {
+    height: 25px; /* Ajusta según sea necesario */
+    width: auto; /* Mantiene la relación de aspecto */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Opcional: para alinear elementos de navegación */
+}
 
 
 
