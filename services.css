@@ -26,7 +26,7 @@ main {
 
 
 .navbar-logo {
-    height: 200px; /* Ajusta la altura según sea necesario */
+    height: 100px; /* Ajusta la altura según sea necesario */
     width: auto; /* Mantiene la relación de aspecto */
     /* Alternativamente, puedes usar width: 100px; para establecer un ancho fijo */
 }
@@ -164,5 +164,10 @@ main {
     .offcanvas-body{
         background-color: rgba(0,0,0,0.7);
         
+    }
+    .navbar-logo {
+        height: 50px; /* Ajusta la altura según sea necesario */
+        width: auto; /* Mantiene la relación de aspecto */
+        /* Alternativamente, puedes usar width: 100px; para establecer un ancho fijo */
     }
 }

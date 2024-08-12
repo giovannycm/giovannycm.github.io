@@ -1,18 +1,32 @@
-.index{
-    background: url("https://giovannycm.github.io/img/Chichen.png") rgba(0,0,0,0.3);
-    background-blend-mode: multiply;
-    background-position:  center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 60px; /* Ajusta esto para que coincida con la altura de tu footer */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Ajusta el color de fondo si es necesario */
+    padding: 1rem;
+    text-align: center; /* Opcional: centrar el contenido del footer */
 }
 
 
 
-
-
 .navbar-logo {
-    height: 200px; /* Ajusta la altura según sea necesario */
+    height: 70px; /* Ajusta la altura según sea necesario */
     width: auto; /* Mantiene la relación de aspecto */
     /* Alternativamente, puedes usar width: 100px; para establecer un ancho fijo */
 }
@@ -27,6 +41,8 @@
     margin-left: auto; /* Opcional: para alinear elementos de navegación */
 }
 
+
+
 .titulo1 {
     font-size: 1.5em;
 }
@@ -35,32 +51,34 @@
     font-size: 1.2em;
 }
 
+.nav-link{
+    color: black;
+}
+
+.active{
+    color: black;
+}
+
+.navbar-brand{
+    font-size: 1.5em;
+    color: black;
+}
 .footer a {
     font-size: 2.5rem;
 }
 
-/* Añade estilos para centrar verticalmente el contenido del footer */
-.footer p {
-    margin: 0;
-    font-size: 1.5rem;
-    color: white;
-}
 
-.footer .btn {
-    font-size: 2.5rem;
-    
-}
 
-.facebook{
-    color: rgba(66,103,178,0.9);
+.btn-whatsapp {
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde */
 }
-
-.whats{
-    color: rgba(37,211,102,0.9);
+.btn-whatsapp:hover {
+    background-color: #1DA851; /* Color verde más oscuro para el hover */
 }
-
-.insta{
-    color: rgba(88,81,216,0.9);
+.btn-whatsapp:focus, .btn-whatsapp:active {
+    box-shadow: none; /* Elimina el efecto de sombra al hacer clic o enfocar */
 }
 
 
