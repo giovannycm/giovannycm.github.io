@@ -41,6 +41,10 @@ main {
     margin-left: auto; /* Opcional: para alinear elementos de navegación */
 }
 
+.navbar-toggler {
+    color: #000;
+    border-color: #000;
+}
 
 
 .titulo1 {
