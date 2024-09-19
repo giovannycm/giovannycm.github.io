@@ -67,18 +67,8 @@ main {
     font-size: 2.5rem;
 }
 
-
-
-.btn-whatsapp {
-    background-color: #25D366; /* Color verde de WhatsApp */
-    color: white; /* Color del texto */
-    border: none; /* Elimina el borde */
-}
-.btn-whatsapp:hover {
-    background-color: #1DA851; /* Color verde más oscuro para el hover */
-}
-.btn-whatsapp:focus, .btn-whatsapp:active {
-    box-shadow: none; /* Elimina el efecto de sombra al hacer clic o enfocar */
+.bi-whatsapp{
+    color: #000201;
 }
 
 

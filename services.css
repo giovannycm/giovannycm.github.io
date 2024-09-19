@@ -88,7 +88,9 @@ main {
     box-shadow: none; /* Elimina el efecto de sombra al hacer clic o enfocar */
 }
 
-
+.tripadvisor:hover {
+    background-color: #00B67A; /* Color verde de TripAdvisor */
+}
 
 
 /* Añade estilos para centrar verticalmente el contenido del footer */
