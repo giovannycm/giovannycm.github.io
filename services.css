@@ -6,6 +6,10 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-image: url('img/patron.png'); /* Reemplaza con la URL de tu imagen */
+    background-repeat: repeat; /* Hace que el fondo se repita */
+    background-size: auto; /* Ajusta el tamaño de cada patrón automáticamente */
+    background-attachment: fixed; /* Fija el fondo mientras haces scroll */
 }
 
 main {
@@ -18,7 +22,7 @@ main {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f8f9fa; /* Ajusta el color de fondo si es necesario */
+    background-color: transparent; /* Ajusta el color de fondo si es necesario */
     padding: .5rem;
     text-align: center; /* Opcional: centrar el contenido del footer */
 }
@@ -88,6 +92,24 @@ h2{
 .footer a {
     font-size: 2.5rem;
 }
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 90px; /* Distancia desde la parte inferior */
+    right: 20px;  /* Distancia desde el lado derecho */
+    z-index: 1000; /* Asegúrate de que se superponga sobre otros elementos */
+    font-size: 1.8rem; /* Ajusta el tamaño del icono según sea necesario */
+    text-decoration: none;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: px;
+}
+  
+
+  
 
 
 .btn-whatsapp {
@@ -172,9 +194,9 @@ h2{
     h2{
         font-size: 2.5em;
     }
-    .texto-carrusel  {
-        visibility: hidden;
-        font-size: 1px;
+    .carousel-caption p  {
+        font-size: 0;
+        
     }
 
     .footer {
