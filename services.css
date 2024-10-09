@@ -6,7 +6,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url('img/patron.png'); /* Reemplaza con la URL de tu imagen */
+    background-image: url('img/descarga.jpg'); /* Reemplaza con la URL de tu imagen */
     background-repeat: repeat; /* Hace que el fondo se repita */
     background-size: auto; /* Ajusta el tamaño de cada patrón automáticamente */
     background-attachment: fixed; /* Fija el fondo mientras haces scroll */
@@ -55,8 +55,8 @@ main {
 }
 
 .navbar a {
-    font-size: 2.8rem;
-    font-family: 'Caveat', sans-serif;
+    font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -96,7 +96,7 @@ h2{
 .whatsapp-button {
     position: fixed;
     bottom: 90px; /* Distancia desde la parte inferior */
-    right: 20px;  /* Distancia desde el lado derecho */
+    right: 150px;  /* Distancia desde el lado derecho */
     z-index: 1000; /* Asegúrate de que se superponga sobre otros elementos */
     font-size: 1.8rem; /* Ajusta el tamaño del icono según sea necesario */
     text-decoration: none;
@@ -163,6 +163,131 @@ h2{
     overflow: hidden;
 }
 
+
+/* Carruseles acordeon*/
+.carousel-container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  /* Galería de miniaturas */
+  .thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+  }
+  
+  .thumbnail:hover {
+    opacity: 1;
+  }
+  
+  .thumbnail.active {
+    border: 2px solid #000;
+    opacity: 1;
+  }
+  
+  /* Botones de navegación */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Ocultar botones en pantallas grandes */
+  .prev, .next {
+    display: none;
+  }
+
+  .collap_1{
+    background-color: rgba(205, 14, 14, 0.945);
+  }
+
+  .collap_2{
+    background-color: rgba(5, 148, 244, 0.945);
+  }
+
+  .collap_3{
+    background-color: rgba(145, 14, 205, 0.945);
+  }
+
+  .collap_4{
+    background-color: rgba(176, 205, 14, 0.945);
+  }
+
+  .collap_5{
+    background-color: rgba(221, 20, 157, 0.945);
+  }
+
+  .collap_6{
+    background-color: rgba(136, 241, 243, 0.945);
+  }
+
+  .collap_7{
+    background-color: rgba(14, 205, 14, 0.945);
+  }
+
+  
+  /* Media Queries para pantallas pequeñas */
+  @media (max-width: 768px) {
+    /* Reducir el tamaño de las miniaturas */
+    .thumbnail {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Ocultar galería de miniaturas en móviles */
+    .thumbnails {
+      display: none;
+    }
+  
+    /* Mostrar los botones de navegación */
+    .prev, .next {
+      display: block;
+    }
+  }
+
+
 @keyframes typing {
     from {width: 0;}
 }
@@ -181,6 +306,20 @@ h2{
 
     h2{
         font-size: 1.5em;
+    }
+    .whatsapp-button {
+        position: fixed;
+        bottom: 40px; /* Distancia desde la parte inferior */
+        right: 50px;  /* Distancia desde el lado derecho */
+        z-index: 1000; /* Asegúrate de que se superponga sobre otros elementos */
+        font-size: 1.5rem; /* Ajusta el tamaño del icono según sea necesario */
+        text-decoration: none;
+        background-color: #25D366;
+        color: #fff;
+        border-radius: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0px;
     }
     
 }
