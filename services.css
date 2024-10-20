@@ -46,8 +46,8 @@ main {
 }
 
 .navbar-toggler {
-    color: #000;
-    border-color: #000;
+    color: #8c1111;
+    border-color: #901c1c;
 }
 
 .navbar-toggler-icon {
@@ -59,7 +59,9 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
-
+.navbar{
+  background-color: transparent;
+}
 
 h2{
     font-size: 2.5em;
@@ -237,45 +239,46 @@ h2{
     display: none;
   }
 
-  .collap_1{
-    background-color: rgba(205, 14, 14, 0.945);
-  }
+  .collap_1 {
+    background-color: #B2E8B1; /* Verde Claro */
+}
 
-  .collap_2{
-    background-color: rgba(5, 148, 244, 0.945);
-  }
+.collap_2 {
+    background-color: #A5D69F; /* Verde Pastel */
+}
 
-  .collap_3{
-    background-color: rgba(145, 14, 205, 0.945);
-  }
+.collap_3 {
+    background-color: #6C9A4A; /* Verde Musgo */
+}
 
-  .collap_4{
-    background-color: rgba(176, 205, 14, 0.945);
-  }
+.collap_4 {
+    background-color: #D2B48C; /* Marrón Claro */
+}
 
-  .collap_5{
-    background-color: rgba(221, 20, 157, 0.945);
-  }
+.collap_5 {
+    background-color: #8B5A2B; /* Marrón Tierra */
+}
 
-  .collap_6{
-    background-color: rgba(136, 241, 243, 0.945);
-  }
+.collap_6 {
+    background-color: #A3D8E3; /* Azul Claro */
+}
 
-  .collap_7{
-    background-color: rgba(14, 205, 14, 0.945);
-  }
+.collap_7 {
+    background-color: #005B99; /* Azul Profundo */
+}
+
 
   
   /* Media Queries para pantallas pequeñas */
-  @media (max-width: 768px) {
-    /* Reducir el tamaño de las miniaturas */
+/*   @media (max-width: 768px) {
+   
     .thumbnail {
       width: 40px;
       height: 40px;
     }
-  }
+  } */
   
-  @media (max-width: 480px) {
+  @media (max-width: 1024px) {
     /* Ocultar galería de miniaturas en móviles */
     .thumbnails {
       display: none;
@@ -285,6 +288,8 @@ h2{
     .prev, .next {
       display: block;
     }
+
+    
   }
 
 
@@ -302,6 +307,20 @@ h2{
     .sidebar{
         background-color: rgba(255,255,255,0.8);
         backdrop-filter: blur();
+    }
+
+    .navbar{
+      background-color: black;
+    }
+
+    .navbar-logo {
+      content: url('img/Logo-Lakin-s.png'); /* Cambia el nombre del archivo según sea necesario */
+      height: 10px; /* Ajusta la altura según sea necesario */
+        width: auto;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 
     h2{
