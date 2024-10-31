@@ -315,7 +315,7 @@ h2{
 
     .navbar-logo {
       content: url('img/Logo-Lakin-s.png'); /* Cambia el nombre del archivo según sea necesario */
-      height: 10px; /* Ajusta la altura según sea necesario */
+      height: 250px; /* Ajusta la altura según sea necesario */
         width: auto;
     }
 
@@ -389,7 +389,7 @@ h2{
         
     }
     .navbar-logo {
-        height: 50px; /* Ajusta la altura según sea necesario */
+        height: 200px; /* Ajusta la altura según sea necesario */
         width: auto; /* Mantiene la relación de aspecto */
         /* Alternativamente, puedes usar width: 100px; para establecer un ancho fijo */
     }
