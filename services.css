@@ -58,7 +58,8 @@ main {
 
 .navbar a {
     font-size: 2.2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
 }
 
 .navbar{
