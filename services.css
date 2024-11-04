@@ -29,6 +29,8 @@ main {
 
 
 
+
+
 .navbar-logo {
     height: 100px; /* Ajusta la altura según sea necesario */
     width: auto; /* Mantiene la relación de aspecto */
@@ -62,6 +64,25 @@ main {
 .navbar{
   background-color: transparent;
 }
+
+
+.flags{
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flags_item{
+    width: 30px;
+}
+
+.flags_img{
+    display: block;
+    cursor: pointer;
+}
+
+
 
 h2{
     font-size: 2.5em;

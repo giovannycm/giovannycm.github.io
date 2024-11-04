@@ -42,19 +42,20 @@
                   <!-- Contenedor para alinear los elementos a la derecha -->
                   <ul class="navbar-nav ms-auto fs-5">
                       <li class="nav-item mx-2">
-                          <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                          <a class="nav-link" aria-current="page" href="index.html" data-section="navbar" data-value="home" >Inicio</a>
                       </li>
-                      <!-- <li class="nav-item dropdown mx-2">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Tours
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="services.html">Tours completos</a></li>
-                            <li><a class="dropdown-item" href="walking.html">Walking tours</a></li>
-                        </ul>
-                    </li> -->
                       <li class="nav-item mx-2">
-                          <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                          <a class="nav-link" href="Nosotros.html" data-section="navbar" data-value="about_us">Nosotros</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                          <div  id="flags" class="flags" >
+                              <div class="flags_item" data-lenguage="es">
+                                  <img src="img/mx.svg" alt="Español" alt="">
+                              </div>
+                              <div class="flags_item" data-lenguage="en">
+                                <img src="img/us.svg" alt="English" alt="">
+                            </div>
+                          </div>
                       </li>
                   </ul>
               </div>
@@ -128,8 +129,8 @@
               <div class="card shadow-lg">
                   <img src="img/Walking/WalkingTour_Mat.jpg" class="card-img-top" alt="Walking Tour Valladolid">
                   <div class="card-body">
-                    <h5 class="card-title">🚶‍♂️ WALKING TOUR EN VALLADOLID (TOUR MATUTINO) ☀️</h5>
-                    <p class="card-text">
+                    <h5 class="card-title" data-section="walking_tours" data-value="mat_title">🚶‍♂️ WALKING TOUR EN VALLADOLID (TOUR MATUTINO) ☀️</h5>
+                    <p class="card-text" data-section="walking_tours" data-value="mat_description" >
                       Descubre Valladolid de una manera única con nuestros recorridos diseñados para sumergirte en la vibrante cultura local 🎨. Desde el corazón histórico de la ciudad, donde la majestuosa Iglesia de San Servacio ⛪ y la encantadora plaza te transportarán al glorioso pasado de Valladolid, hasta el pintoresco barrio indígena de Santa Ana, donde el bullicioso mercado 🛍️ y los lugareños te recibirán con los brazos abiertos 🤗.
                       <br><br>
                       No puedes perderte la visita al impresionante cenote Zací, un tesoro oculto en el centro de la ciudad que revela secretos ancestrales. Déjate cautivar por la fascinante arquitectura colonial 🏘️ y las coloridas calles que hacen de Valladolid uno de los destinos más pintorescos de México 🇲🇽.
@@ -142,7 +143,7 @@
                     </p>
                     <a href="https://wa.me/5219851007206?text=Hola%2C%20me%20interesa%20reservar%20el%20Walkingtour%20Matutino%2E" 
                           class="btn btn-whatsapp" 
-                          target="_blank">
+                          target="_blank" data-section="walking_tours" data-value="walk_button" >
                           Mas información
                     </a>
                   </div>
@@ -155,8 +156,8 @@
               <div class="card shadow-lg">
                   <img src="img/Valladolid_tarde.jpg" class="card-img-top" alt="Walking Tour Vespertino Valladolid">
                   <div class="card-body">
-                    <h5 class="card-title">🌆 WALKING TOUR EN VALLADOLID (TOUR VESPERTINO) 🌇</h5>
-                    <p class="card-text">
+                    <h5 class="card-title" data-section="walking_tours" data-value="ves_title">WALKING TOUR EN VALLADOLID (TOUR VESPERTINO) 🌙</h5>
+                    <p class="card-text" data-section="walking_tours" data-value="ves_description">
                       Descubre Valladolid a través de un recorrido lleno de historia y misterio 🔮 que comienza en la encantadora Plaza Principal, corazón de este pueblo mágico ✨. Desde la majestuosa Iglesia de San Servacio ⛪ hasta las pintorescas calles empedradas, cada paso revela secretos antiguos y la vibrante vida de los mayas contemporáneos.
                       <br><br>
                       Déjate cautivar por las coloridas fachadas que te guiarán al imponente Ex Convento de San Bernardino 🏰, donde podrás explorar uno de los museos más populares y descubrir cómo se vivía en estas magníficas casonas. El punto culminante será frente al Exmonasterio de San Bernardino, testigo de siglos de historia y centro de la evangelización en Yucatán 📖.
@@ -169,7 +170,7 @@
                     </p>
                     <a href="https://wa.me/5219851007206?text=Hola%2C%20me%20interesa%20reservar%20el%20Walkingtour%20Vespertino%2E" 
                           class="btn btn-whatsapp" 
-                          target="_blank">
+                          target="_blank" data-section="walking_tours" data-value="walk_button">
                           Mas información
                       </a>
                   </div>
@@ -181,7 +182,7 @@
 
 
 <!-------------------------------- TOURS COMPLETOS  ------------------------------->
-    <h2 class="text-center mt-5">Tours Completos</h2>
+    <h2 class="text-center mt-5">Tours</h2>
 
 <div class="container-lg mb-5 mt-5">
           <div class="accordion" id="accordionExample">
@@ -189,7 +190,7 @@
             <div class="accordion-item ">
               <h2 class="accordion-header" id="headingOne">
               
-              <button class="accordion-button collapsed collap_1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="accordion-button collapsed collap_1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-section="tours" data-value="t1_title">
                   Servicio de guía privado en la zona arqueológica de Chichen Itza
                 </button>
               </h2>
@@ -223,21 +224,11 @@
                         
 
                   </div>
-                      <div class=" col-12 col-lg-12  text-justify mt-5">
-                          <p>Descubre los misterios y rincones de Chichen Itzá con nuestros expertos guías nativos. Declarada
-                            por la UNESCO como patrimonio mundial de la humanidad en 1988 y como una de las nuevas
-                            maravillas del mundo moderno el 7 de julio del 2007. Esta antigua ciudad maya todavía guarda
-                            misterios que sólo pueden ser descubiertos de la mano de expertos locales, aprende sobre la cultura,
-                            arquitectura, historia y tradiciones mayas. Más que un guía, tendrás un acompañante que te hará
-                            disfrutar al máximo tu visita, brindándote recomendaciones para una estancia placentera y divertida.</p>
-                          <p> Además, podrás evitar largas filas para comprar tus boletos, si así lo deseas, puedes solicitarlos al
-                            momento de hacer tu reserva.</p>
-                            <p>🕒 Horario del tour 8:00 a.m (para evitar las multitudes y el calor)</p>
-                            <p>📍 Punto de encuentro: acceso principal de la zona arqueológica de Chichen Itza</p>
-                            <p>❌ No incluye tickets de acceso a la zona arqueológica.</p>
+                      <div class=" col-12 col-lg-12  text-justify mt-5" data-section="tours" data-value="t1_description" >
+                        Descubre los misterios y rincones de Chichen Itzá con nuestros expertos guías nativos. <br><br> Declarada por la UNESCO como patrimonio mundial de la humanidad en 1988 y como una de las nuevasmaravillas del mundo moderno el 7 de julio del 2007. <br><br>Esta antigua ciudad maya todavía guarda misterios que sólo pueden ser descubiertos de la mano de expertos locales, aprende sobre la cultura, arquitectura, historia y tradiciones mayas. <br><br> Más que un guía, tendrás un acompañante que te hará disfrutar al máximo tu visita, brindándote recomendaciones para una estancia placentera y divertida.<br><br>Además, podrás evitar largas filas para comprar tus boletos, si así lo deseas, puedes solicitarlos al momento de hacer tu reserva.<br><br>🕒 Horario del tour 8:00 a.m (para evitar las multitudes y el calor)<br>📍  Punto de encuentro: acceso principal de la zona arqueológica de Chichen Itza <br>❌ No incluye tickets de acceso a la zona arqueológica. <br> <br>
                           <a href="https://wa.me/5219851007206?text=Hola%2C%20me%20interesa%20reservar%20el%20tour%20Chichen%20con%20Guia%2E" 
                             class="btn btn-whatsapp" 
-                            target="_blank">
+                            target="_blank" data-section="tours" data-value="t1_button">
                             Mas información
                           </a>
                       </div>
@@ -250,7 +241,7 @@
             <!-- Guía privado Ek Balam -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed collap_2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="accordion-button collapsed collap_2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-section="tours" data-value="t2_title">
                   Servicio de guía privado  en la zona arqueológica de Ek Balam
                 </button>
               </h2>
@@ -288,29 +279,11 @@
 
 
                     </div>
-                    <div class="col-12 col-lg-12 text-justify">
-                      <p>¿Sabías que los mayas protegían una ciudad con una triple muralla? A solo 30 minutos de Valladolid,
-                        Yucatán, se encuentra Ek Balam, que en lengua maya significa “jaguar negro” o “estrella jaguar”.</p>
-                      <p>Descubre los misterios de esta impresionante ciudad maya recorriendo sus habitaciones y admirando
-                        la auténtica escritura jeroglífica en sus paredes. A diferencia de otros sitios arqueológicos, aquí podrás
-                        disfrutar del paisaje desde la cima de sus magníficos palacios y templos, incluyendo la Gran Acrópolis,
-                        una de las estructuras más grandes de Yucatán.
-                        </p>
-                      <p>Ek Balam te sorprenderá con una de las tumbas más importantes del mundo maya. Aprenderás sobre
-                        la historia, arquitectura y cultura de esta fascinante civilización. Si estás en la región, no puedes
-                        perderte esta experiencia</p>
-                      <p>No dejes pasar la oportunidad de conocer Ek Balam; una zona arqueológica única en su tipo,aún
-                        tiene muchos elementos y rincones escondidos que solo un guía nativo te puede mostrar. Prepárate
-                        para escalar sus maravillosos templos y entender la historia que guardan sus paredes.
-                        Te aseguramos que te enamorarás aún más de la cultura maya.</p>
-                      
-                      <p>🕒 Horario de tour: 8:00 a.m</p>
-                      <p>📍 Punto de encuentro: acceso principal de la zona arqueológica de Ek Balam, justo donde estan las
-                        letras fotográficas.</p>
-                      <p>❌ No incluye Tickets de acceso a la zona arqueológica.</p>
+                    <div class="col-12 col-lg-12 text-justify" data-section="tours" data-value="t2_description" >
+                      ¿Sabías que los mayas protegían una ciudad con una triple muralla? A solo 30 minutos de Valladolid, Yucatán, se encuentra Ek Balam, que en lengua maya significa “jaguar negro” o “estrella jaguar”.<br><br>Descubre los misterios de esta impresionante ciudad maya recorriendo sus habitaciones y admirando la auténtica escritura jeroglífica en sus paredes. A diferencia de otros sitios arqueológicos, aquí podrás disfrutar del paisaje desde la cima de sus magníficos palacios y templos, incluyendo la Gran Acrópolis, una de las estructuras más grandes de Yucatán.<br><br>Ek Balam te sorprenderá con una de las tumbas más importantes del mundo maya. Aprenderás sobre la historia, arquitectura y cultura de esta fascinante civilización. Si estás en la región, no puedes perderte esta experiencia.<br><br>No dejes pasar la oportunidad de conocer Ek Balam; una zona arqueológica única en su tipo, aún tiene muchos elementos y rincones escondidos que solo un guía nativo te puede mostrar. Prepárate para escalar sus maravillosos templos y entender la historia que guardan sus paredes. Te aseguramos que te enamorarás aún más de la cultura maya.<br><br>🕒 Horario de tour: 8:00 a.m<br>📍 Punto de encuentro: acceso principal de la zona arqueológica de Ek Balam, justo donde están las letras fotográficas.<br>❌ No incluye Tickets de acceso a la zona arqueológica.<br><br>
                       <a href="https://wa.me/5219851007206?text=Hola!!!%20Quiero%20mas%20información%20de%20Servicio%20de%20guía%20privado%20en%20la%20zona%20arqueológica%20de%20Ek%20Balam%2E" 
                             class="btn btn-whatsapp" 
-                            target="_blank">
+                            target="_blank" data-section="tours" data-value="t1_button">
                             Mas información
                       </a>
                     </div>    
@@ -322,7 +295,7 @@
             <!-- Experiencia Itza -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed collap_3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="accordion-button collapsed collap_3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-section="tours" data-value="t3_title">
                  Tour Chichen Itza y cenotes con transportación desde Valladolid (EXPERIENCIA ITZA)
                 </button>
               </h2>
@@ -360,31 +333,12 @@
 
 
                     </div>
-                    <div class="col-12 text-justify">
-                      <p>¡Embárcate en una aventura desde Valladolid, para descubrir la magnífica ciudad prehispánica de
-                        Chichen itza, declarada patrimonio mundial de la humanidad en 1988.</p>
-                      <p>Nuestro tour comienza con la recogida en tu hospedaje, al ser de los primeros en llegar disfrutarás el
-                        paseo en la zona arqueológica evitando el calor y las multitudes. Al llegar uno de nuestros guías
-                        certificados y expertos en Chichen Itza te explicará todo lo relacionado sobre la cultura maya.
-                        Después de explorar Chichen Itzá, la aventura continúa con la visita a dos fuentes de refrescantes
-                        aguas subterráneas mejor conocidas como Cenotes</p>
-                      <p>Rodeada por la impresionante selva tropical que caracteriza nuestro estado de Yucatan se encuentran
-                        los cenotes Ikkil, Xkeken y Samula.</p>
-                      <p>Al ser un tour exclusivo (grupo muy reducido) disfrutarás de este tour sin prisas y a tu propio ritmo.</p>
-                      <p>🕒Pick up: 7:00 a.m. Incluye:</p>
-                      <ul>
-                        <li>🚌 Transportación.</li>
-                        <li>👨‍✈️ Chofer.</li>
-                        <li>🗺️ Servicio de guía en la zona arqueológica de Chichen Itza.</li>
-                      </ul>
-                      <p>No incluye:</p>
-                      <ul>
-                          <li>❌ Tickets de acceso a la zona arqueológica.</li>
-                          <li>❌ Tickets de acceso a los cenotes.</li>
-                      </ul>
+                    <div class="col-12 text-justify" data-section="tours" data-value="t3_description">
+                      ¡Embárcate en una aventura desde Valladolid, para descubrir la magnífica ciudad prehispánica de Chichen Itza, declarada patrimonio mundial de la humanidad en 1988.<br><br>Nuestro tour comienza con la recogida en tu hospedaje, al ser de los primeros en llegar disfrutarás el paseo en la zona arqueológica evitando el calor y las multitudes. Al llegar, uno de nuestros guías certificados y expertos en Chichen Itza te explicará todo lo relacionado sobre la cultura maya. Después de explorar Chichen Itzá, la aventura continúa con la visita a dos fuentes de refrescantes aguas subterráneas mejor conocidas como cenotes.<br><br>Rodeada por la impresionante selva tropical que caracteriza nuestro estado de Yucatán se encuentran los cenotes Ikkil, Xkeken y Samula.<br><br>Al ser un tour exclusivo (grupo muy reducido) disfrutarás de este tour sin prisas y a tu propio ritmo.<br><br>🕒 Pick up: 7:00 a.m.<br><strong>🕒Pick up: 7:00 a.m. Incluye:<ul><li>🚌 Transportación.</li><li>👨‍✈️ Chofer.</li><li>🗺️ Servicio de guía en la zona arqueológica de Chichen Itza.</li> </ul>No incluye:</strong><br>❌ Tickets de acceso a la zona arqueológica.<br>❌ Tickets de acceso a los cenotes.
+
                       <a href="https://wa.me/5219851007206?text=Hola%2C%20me%20interesa%20reservar%20el%20tour%20Chichen%20desde%20Valladolid%2E" 
                             class="btn btn-whatsapp" 
-                            target="_blank">
+                            target="_blank" data-section="tours" data-value="t1_button">
                             Mas información
                       </a>
                     </div>
@@ -397,7 +351,7 @@
             <!-- Experiencia Mundo Maya -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed collap_4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <button class="accordion-button collapsed collap_4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-section="tours" data-value="t4_title">
                     Tour chichen itza, cenote/ comida y Ek Balam (EXPERIENCIA MUNDO MAYA)
                   </button>
                 </h2>
@@ -443,46 +397,10 @@
                         </div>
 
                       </div>
-                      <div class="col-12  text-justify">
-                        <p>🌟 ¡Únete a nosotros en una aventura inolvidable para explorar dos de los tesoros más emblemáticos de Yucatán!</p>
-                        <p>Disfruta y aprovecha al máximo de tu estancia en Valladolid.</p>
-                        <p>Si eres amante de la arqueología, historia y por supuesto de la aventura, esta experiencia es perfecta para ti.</p>
-                        <p>Disfrutarás de una mañana en la zona arqueológica de Chichen Itza antes de las multitudes y el intenso calor que caracteriza a nuestro Estado.</p>
-                        <p>Después de esta caminata a refrescarse en las cristalinas aguas de uno de los cenotes más hermosos de Yucatán, deleitarás comida regional (buffet).</p>
-                        <p>Después de refrescarse, nada mejor que disfrutar del atardecer con las vistas más hermosas sobre los templos y palacios de la zona arqueológica de Ek Balam.</p>
-                        <p>Por supuesto que nuestros guías certificados te harán sumergirte en la historia y conocimiento que encierra nuestra maravillosa cultura y sus ciudades prehispánicas.</p>
-                        <p>🕒 Todo esto sin prisas y a tu propio ritmo en un tour exclusivo (grupo muy reducido).</p>
-                        <p>😊 Para nosotros no hay nada más importante que la satisfacción y disfrute de nuestros viajeros.</p>
-                        <p>🕖 Pick up: 7:00 a.m.</p>
+                      <div class="col-12  text-justify" data-section="tours" data-value="t4_description">
+                        🌟 ¡Únete a nosotros en una aventura inolvidable para explorar dos de los tesoros más emblemáticos de Yucatán!<br><br>Disfruta y aprovecha al máximo de tu estancia en Valladolid. Si eres amante de la arqueología, historia y por supuesto de la aventura, esta experiencia es perfecta para ti. Disfrutarás de una mañana en la zona arqueológica de Chichen Itza antes de las multitudes y el intenso calor que caracteriza a nuestro Estado.Luego de esta caminata a refrescarse en las cristalinas aguas de uno de los cenotes más hermosos de Yucatán, deleitarás comida regional (buffet).<br><br>Después de refrescarse, nada mejor que disfrutar del atardecer con las vistas más hermosas sobre los templos y palacios de la zona arqueológica de Ek Balam.Por supuesto que nuestros guías certificados te harán sumergirte en la historia y conocimiento que encierra nuestra maravillosa cultura y sus ciudades prehispánicas.🕒 Todo esto sin prisas y a tu propio ritmo en un tour exclusivo (grupo muy reducido).<br><br>😊 Para nosotros no hay nada más importante que la satisfacción y disfrute de nuestros viajeros. <br><br>🕖 Pick up: 7:00 a.m.<ul><li>🚌 Transportación</li><li>👨‍✈️ Chofer</li><li>⛽ Combustible</li><li>🅿️ Parking</li><li>🗺️ Servicio de guía en la zona arqueológica de Chichen Itza</li><li>🗺️ Servicio de guía en la zona arqueológica de Ek Balam</li><li>🎟️ Incluye tickets de acceso al cenote</li><li>🍽️ Incluye comida tipo buffet</li></ul>❌ No incluye:<ul><li>🎟️ Tickets de acceso a la zona arqueológica de Ek Balam y Chichen Itza</li><li>🍹 Bebidas en el restaurante</li></ul>⚠️ Restricciones para el cenote:<ul><li>🚷 No apto para personas con dificultades de movilidad, problemas cardiacos y claustrofóbicos</li><li>♿ Silla de ruedas</li><li>🐾 Mascotas</li></ul>
                         
-                        <p>✅ Incluye:</p>
-                        <ul>
-                            <li>🚌 Transportación</li>
-                            <li>👨‍✈️ Chofer</li>
-                            <li>⛽ Combustible</li>
-                            <li>🅿️ Parking</li>
-                            <li>🗺️ Servicio de guía en la zona arqueológica de Chichen Itza</li>
-                            <li>🗺️ Servicio de guía en la zona arqueológica de Ek Balam</li>
-                            <li>🎟️ Incluye tickets de acceso al cenote</li>
-                            <li>🍽️ Incluye comida tipo buffet</li>
-                        </ul>
-                        
-                        <p>❌ No incluye:</p>
-                        <ul>
-                            <li>🎟️ Tickets de acceso a la zona arqueológica de Ek Balam y Chichen Itza</li>
-                            <li>🍹 Bebidas en el restaurante</li>
-                        </ul>
-
-                        <p>⚠️ Restricciones para el cenote:</p>
-                        <ul>
-                            <li>🚷 No apto para personas con dificultades de movilidad, problemas cardiacos y claustrofóbicos</li>
-                            <li>♿ Silla de ruedas</li>
-                            <li>🐾 Mascotas</li>
-                        </ul>
-                        <a href="https://wa.me/5219851007206?text=Hola%2C%20me%20interesa%20reservar%20el%20tour%20Chichen%20desde%20Valladolid%2E" 
-                              class="btn btn-whatsapp" 
-                              target="_blank">
-                              Mas información
+                        <a href="https://wa.me/5219851007206?text=Hola%2C%20me%20interesa%20reservar%20el%20tour%20Chichen%20desde%20Valladolid%2E" class="btn btn-whatsapp" target="_blank" data-section="tours" data-value="t1_button"> Mas información
                         </a>
                       </div>
                     </div>
@@ -493,7 +411,7 @@
               <!-- Experiencia Balam -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFive">
-                  <button class="accordion-button collapsed collap_5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <button class="accordion-button collapsed collap_5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" data-section="tours" data-value="t5_title">
                     Tour Ek Balam y Cenotes  (EXPERIENCIA BALAM )
                   </button>
                 </h2>
@@ -529,39 +447,12 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-12  text-justify">
-                        <p>¿Sabías que hay una ciudad que los mayas protegían celosamente con una triple muralla?
-                        Localizado a 30 minutos de Valladolid, Yucatán. "Ek Balam" vocablos en lengua maya traducidos como: jaguar negro, jaguar obscuro o estrella jaguar. </p>
-                        <p>Descubre la magia ancestral de esta ciudad prehispánica en un tour inolvidable desde Valladolid. Conoce los misterios que encierra esta impresionante ciudad maya, recorriendo sus habitaciones.</p>
-                        <p>Asómbrate con la autentica escritura geroglífica que todavía sobrevive en sus paredes.
-                          Además, a diferencia de otro sitio arqueológico, aquí tendrás la oportunidad admirar el impresionante
-                          paisaje en la cima de sus magnificos palacios, templos y sobre una de las estructuras más grandes
-                          de todo el estado de Yucatán : la gran Acrópolis.</p>
-                        <p>Ek Balam no parará de sorprenderte, conocerás una de las tumbas mas importantes e impresionantes del mundo maya.</p>
-                        <p>Hablaremos sobre historia,  arquitectura, cultura y mucho más. Si estas en esta región, no te puedes perder esta experiencia.</p>
-                        <p>Y para completar tu aventura, después de conocer esta impresionante zona arqueológica, refrescate
-                          y sumérgete en las aguas cristalinas de los cenotes Xcanché y Hubiku.
-                        El primero se encuentra localizado a un costado del sitio arqueológico. </p>
-                        <p>🍽️ Completa tu día con un delicioso buffet de comida regional.</p>
-                        <p>🕖 Pick up: 7:00 a.m.</p>
-                        
-                        <p>✅ Incluye:</p>
-                        <ul>
-                            <li>🚌 Transportación.</li>
-                            <li>👨‍✈️ Chofer.</li>
-                            <li>🅿️ Estacionamiento.</li>
-                            <li>🗺️ Servicio de guía en la zona arqueológica de Ek Balam.</li>
-                            <li>🎟️ Incluye tickets de acceso al cenote Xcanche y al cenote Hubiku.</li>
-                            <li>🍽️ Incluye comida tipo buffet.</li>
-                        </ul>
-                        <p>❌ No incluye:</p>
-                        <ul>
-                            <li>🎟️ Tickets de acceso a la zona arqueológica de Ek Balam.</li>
-                            <li>🍹 Bebidas en el restaurante.</li>
-                        </ul>
+                      <div class="col-12  text-justify" data-section="tours" data-value="t5_description">
+                        ¿Sabías que hay una ciudad que los mayas protegían celosamente con una triple muralla? Localizado a 30 minutos de Valladolid, Yucatán. "Ek Balam" vocablos en lengua maya traducidos como: jaguar negro, jaguar obscuro o estrella jaguar. <br><br>Descubre la magia ancestral de esta ciudad prehispánica en un tour inolvidable desde Valladolid. Conoce los misterios que encierra esta impresionante ciudad maya, recorriendo sus habitaciones.<br><br> Asómbrate con la autentica escritura geroglífica que todavía sobrevive en sus paredes.Además, a diferencia de otro sitio arqueológico, aquí tendrás la oportunidad admirar el impresionante paisaje en la cima de sus magnificos palacios, templos y sobre una de las estructuras más grandes de todo el estado de Yucatán : la gran Acrópolis. <br><br>Ek Balam no parará de sorprenderte, conocerás una de las tumbas mas importantes e impresionantes del mundo maya.Hablaremos sobre historia,  arquitectura, cultura y mucho más. Si estas en esta región, no te puedes perder esta experiencia.<br><br> Y para completar tu aventura, después de conocer esta impresionante zona arqueológica, refrescate y sumérgete en las aguas cristalinas de los cenotes Xcanché y Hubiku. El primero se encuentra localizado a un costado del sitio arqueológico. <br><br>🍽️ Completa tu día con un delicioso buffet de comida regional.<br><br>🕖 Pick up: 7:00 a.m.<br><br>✅ Incluye:<ul><li>🚌 Transportación.</li><li>👨‍✈️ Chofer.</li><li>🅿️ Estacionamiento.</li><li>🗺️ Servicio de guía en la zona arqueológica de Ek Balam.</li><li>🎟️ Incluye tickets de acceso al cenote Xcanche y al cenote Hubiku.</li><li>🍽️ Incluye comida tipo buffet.</li></ul>❌ No incluye:<ul><li>🎟️ Tickets de acceso a la zona arqueológica de Ek Balam.</li><li>🍹 Bebidas en el restaurante.</li></ul>
+
                         <a href="https://wa.me/5219851007206?text=Hola%2C%20me%20interesa%20reservar%20el%20tour%20Chichen%20desde%20Valladolid%2E" 
                               class="btn btn-whatsapp" 
-                              target="_blank">
+                              target="_blank" data-section="tours" data-value="t1_button">
                               Mas información
                         </a>
                       </div>
@@ -572,7 +463,7 @@
 
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingSix">
-                  <button class="accordion-button collapsed collap_6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <button class="accordion-button collapsed collap_6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" data-section="tours" data-value="t6_title">
                     Rio Lagartos, Las Coloradas y Cenote/Comida (Experiencia Flamingos) 
                   </button>
                 </h2>
@@ -615,46 +506,12 @@
                         </div>
 
                       </div>
-                      <div class="col-12  text-justify">
-                        <p>Tu aventura comienza a las 6:00 de la mañana, pasando a recogerte en tu hotel en Valladolid. Nos tomará alrededor de 2 horas llegar al puerto de Río Lagartos.</p>
+                      <div class="col-12  text-justify" data-section="tours" data-value="t6_description">
+                        Tu aventura comienza a las 6:00 de la mañana, pasando a recogerte en tu hotel en Valladolid. Nos tomará alrededor de 2 horas llegar al puerto de Río Lagartos.<br><br>🚤 Una vez en Río Lagartos, embarcaremos en una emocionante aventura en lancha. Nuestro guía local experto nos llevará a través de los manglares y estuarios, donde tendrás la oportunidad única de observar una amplia variedad de aves migratorias y la fauna local, incluyendo los emblemáticos cocodrilos 🐊.<br><br>🏖️ Después de la navegación, nos detendremos en una playa cercana para que puedas relajarte y disfrutar del paisaje costero. Tendrás tiempo libre para nadar en las aguas cristalinas o simplemente tomar el sol en la arena blanca.<br><br>🌸 <strong>Opción de Visita a Las Coloradas:</strong> Para aquellos interesados en las famosas lagunas rosadas de Las Coloradas, podrás optar por hacer una parada (entrada no incluida). Este lugar es conocido por su espectacular coloración rosada debido a la alta concentración de sal y microorganismos.<br><br>⛲ Después de esta aventura, regresaremos para disfrutar un impresionante cenote, donde podrás refrescarte y admirar la belleza natural de las formaciones rocosas y aguas subterráneas. En este mismo lugar, disfrutarás de un delicioso almuerzo tipo buffet 🍽️. Saborea los sabores auténticos de la cocina yucateca.<br><br>Finalmente, te llevaremos de regreso a tu hotel en Valladolid 🏨.<br><br><strong>Incluye:</strong><ul><li>🚐 Pick up y drop off en su hotel en Valladolid</li><li>👨‍✈️ Chofer</li><li>⛽ Combustible</li><li>🚤 Paseo en lancha en Río Lagartos para la observación de fauna y flora</li><li>🏊‍♂️ Tiempo para nadar en la playa</li><li>🌸 Visita a Las Coloradas (opcional, acceso no incluido)</li><li>🎟️ Tickets de acceso al cenote</li><li>🍽️ Comida tipo buffet</li></ul><strong>No incluye:</strong><ul><li>🍹 Bebidas en el restaurante</li><li>🎟️ Tickets de acceso a Las Coloradas</li></ul><strong>Restricciones para el cenote:</strong><ul><li>🚫 No apto para personas con dificultades de movilidad, problemas cardíacos y claustrofobia</li><li>🚫 No apto para silla de ruedas</li><li>🚫 No se permiten mascotas.</li></ul>
 
-                        <p>🚤 Una vez en Río Lagartos, embarcaremos en una emocionante aventura en lancha. Nuestro guía local experto nos llevará a través de los manglares y estuarios, donde tendrás la oportunidad única de observar una amplia variedad de aves migratorias y la fauna local, incluyendo los emblemáticos cocodrilos 🐊.</p>
-
-                        <p>🏖️ Después de la navegación, nos detendremos en una playa cercana para que puedas relajarte y disfrutar del paisaje costero. Tendrás tiempo libre para nadar en las aguas cristalinas o simplemente tomar el sol en la arena blanca.</p>
-
-                        <p>🌸 <strong>Opción de Visita a Las Coloradas:</strong> Para aquellos interesados en las famosas lagunas rosadas de Las Coloradas, podrás optar por hacer una parada (entrada no incluida). Este lugar es conocido por su espectacular coloración rosada debido a la alta concentración de sal y microorganismos.</p>
-
-                        <p>⛲ Después de esta aventura, regresaremos para disfrutar un impresionante cenote, donde podrás refrescarte y admirar la belleza natural de las formaciones rocosas y aguas subterráneas. En este mismo lugar, disfrutarás de un delicioso almuerzo tipo buffet 🍽️. Saborea los sabores auténticos de la cocina yucateca.</p>
-
-                        <p>Finalmente, te llevaremos de regreso a tu hotel en Valladolid 🏨.</p>
-
-                        <p><strong>Incluye:</strong></p>
-                        <ul>
-                          <li>🚐 Pick up y drop off en su hotel en Valladolid</li>
-                          <li>👨‍✈️ Chofer</li>
-                          <li>⛽ Combustible</li>
-                          <li>🚤 Paseo en lancha en Río Lagartos para la observación de fauna y flora</li>
-                          <li>🏊‍♂️ Tiempo para nadar en la playa</li>
-                          <li>🌸 Visita a Las Coloradas (opcional, acceso no incluido)</li>
-                          <li>🎟️ Tickets de acceso al cenote</li>
-                          <li>🍽️ Comida tipo buffet</li>
-                        </ul>
-
-                        <p><strong>No incluye:</strong></p>
-                        <ul>
-                          <li>🍹 Bebidas en el restaurante</li>
-                          <li>🎟️ Tickets de acceso a Las Coloradas</li>
-                        </ul>
-
-                        <p><strong>Restricciones para el cenote:</strong></p>
-                        <ul>
-                          <li>🚫 No apto para personas con dificultades de movilidad, problemas cardíacos y claustrofobia</li>
-                          <li>🚫 No apto para silla de ruedas</li>
-                          <li>🚫 No se permiten mascotas</li>
-                        </ul>
                         <a href="https://wa.me/5219851007206?text=Hola%2C%20me%20interesa%20reservar%20el%20tour%20Chichen%20desde%20Valladolid%2E" 
                               class="btn btn-whatsapp" 
-                              target="_blank">
+                              target="_blank" data-section="tours" data-value="t1_button">
                               Mas información
                         </a>
                       </div>
@@ -666,7 +523,7 @@
               <!-- Experiencia XIBALBA -->
         <div class="accordion-item">
                 <h2 class="accordion-header" id="headingSeven">
-                  <button class="accordion-button collapsed collap_7" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  <button class="accordion-button collapsed collap_7" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" data-section="tours" data-value="t7_title">
                     Tour de cenotes y comida en comunidad maya (EXPERIENCIA XIBALBA)  
                   </button>
                 </h2>
@@ -697,43 +554,12 @@
                         </div>
 
                       </div>
-                      <div class="col-12  text-justify">
-                        <p><bold>(Palomitas, Xkanajaltun, Secreto Maya, Xux-Ha y comida en Tikuch)</bold></p>
-                        <p>Para nuestros antepasados mayas, nuestro universo estaba conformado en 3 niveles y 7 rumbos cósmicos. Estos eran los puntos cardinales, el supramundo, mundo e inframundo.</p>
-                        <p> Al que todos le temían era al Xibalba, lugar donde moraban los 9 señores más temidos y solamente aquellos que tenían el privilegio y la valentía suficiente podían descender y estar en contacto con ellos.</p>
-                        <p>En esta aventura podrás conocer las puertas al inframundo, ts'ono'oto'ob como nuestros ancestros les llamaban, lugares llenos de misterios, que probablemente fueron utilizados para ciertos tipos de ofrendas dedicados a Bolonti' Ku', los 9 señores del inframundo.</p>
-                        <p>Nuestra experiencia Xibalba es un tour exclusivo diseñado para pequeños grupos de exploradores, de máximo 6 personas, donde conoceremos los cenotes más bonitos de la región, sin prisas y a tu propio ritmo.</p>
-                        <p>Descubre la Magia de los Cenotes y la Cultura Maya en un Tour Inolvidable.</p>
-                        <p>Sumérgete en la belleza oculta del oriente de Yucatán con nuestra experiencia única de Cenotes y Comida en Comunidad Maya.</p>
-                        <p>¡Cuatro cenotes espectaculares te esperan! Desde las aguas cristalinas del cenote Palomitas hasta la majestuosa e impresionante caverna de Xux-ha, cada cenote revela una historia milenaria.</p>
-                        <p>Pero la aventura no termina ahí, te invitamos a disfrutar del sabor auténtico de nuestra cocina yucateca con el platillo típico de la región "El pooc chuc" (en caso de ser vegetariano o vegano, favor de notificar).</p>
-                        
-                        <p>✅ Incluye:</p>
-                        <ul>
-                            <li>🚌 Transporte desde su hotel en Valladolid</li>
-                            <li>👨‍✈️ Chofer</li>
-                            <li>⛽ Combustible</li>
-                            <li>🎟️ Tickets de acceso a cuatro cenotes (Palomitas, Xcanahaltun, Secreto Maya, Xux-ha)</li>
-                            <li>🍽️ Comida regional</li>
-                            <li>💧 Aguas durante traslado y cenotes</li>
-                        </ul>
-                        
-                        <p>❌ No incluye:</p>
-                        <ul>
-                            <li>🍹 Bebidas en el restaurante</li>
-                            <li>🦺 Chalecos salvavidas</li>
-                            <li>🔒 Lockers</li>
-                        </ul>
-                        
-                        <p>⚠️ Restricciones:</p>
-                        <ul>
-                            <li>🚷 No apto para personas con dificultades de movilidad, problemas cardiacos y claustrofóbicos</li>
-                            <li>♿ Silla de ruedas</li>
-                            <li>🐾 Mascotas</li>
-                        </ul>
+                      <div class="col-12  text-justify" data-section="tours" data-value="t7_description">
+                        <bold>(Palomitas, Xkanajaltun, Secreto Maya, Xux-Ha y comida en Tikuch)</bold><br><br>Para nuestros antepasados mayas, nuestro universo estaba conformado en 3 niveles y 7 rumbos cósmicos. Estos eran los puntos cardinales, el supramundo, mundo e inframundo.<br>Al que todos le temían era al Xibalba, lugar donde moraban los 9 señores más temidos y solamente aquellos que tenían el privilegio y la valentía suficiente podían descender y estar en contacto con ellos.<br><br>En esta aventura podrás conocer las puertas al inframundo, ts'ono'oto'ob como nuestros ancestros les llamaban, lugares llenos de misterios, que probablemente fueron utilizados para ciertos tipos de ofrendas dedicados a Bolonti' Ku', los 9 señores del inframundo.<br> Nuestra experiencia Xibalba es un tour exclusivo diseñado para pequeños grupos de exploradores, de máximo 6 personas, donde conoceremos los cenotes más bonitos de la región, sin prisas y a tu propio ritmo. <br><br>Descubre la Magia de los Cenotes y la Cultura Maya en un Tour Inolvidable. <br><br>Sumérgete en la belleza oculta del oriente de Yucatán con nuestra experiencia única de Cenotes y Comida en Comunidad Maya.<br><br>¡Cuatro cenotes espectaculares te esperan! Desde las aguas cristalinas del cenote Palomitas hasta la majestuosa e impresionante caverna de Xux-ha, cada cenote revela una historia milenaria.<br><br>Pero la aventura no termina ahí, te invitamos a disfrutar del sabor auténtico de nuestra cocina yucateca con el platillo típico de la región "El pooc chuc" (en caso de ser vegetariano o vegano, favor de notificar).<br><br>✅ Incluye:<br><ul><li>🚌 Transporte desde su hotel en Valladolid</li><li>👨‍✈️ Chofer</li><li>⛽ Combustible</li><li>🎟️ Tickets de acceso a cuatro cenotes (Palomitas, Xcanahaltun, Secreto Maya, Xux-ha)</li><li>🍽️ Comida regional</li><li>💧 Aguas durante traslado y cenotes</li></ul><br>❌ No incluye:<br><ul><li>🍹 Bebidas en el restaurante</li><li>🦺 Chalecos salvavidas</li><li>🔒 Lockers</li></ul><br>⚠️ Restricciones:<ul><li>🚷 No apto para personas con dificultades de movilidad, problemas cardiacos y claustrofóbicos</li><li>♿ Silla de ruedas</li><li>🐾 Mascotas</li></ul>
+
                         <a href="https://wa.me/5219851007206?text=Hola%2C%20me%20interesa%20reservar%20el%20tour%20Chichen%20desde%20Valladolid%2E" 
                               class="btn btn-whatsapp" 
-                              target="_blank">
+                              target="_blank" data-section="tours" data-value="t1_button">
                               Mas información
                         </a>
                       </div>

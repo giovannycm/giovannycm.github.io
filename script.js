@@ -1,5 +1,27 @@
 let slideIndex = [0, 0, 0, 0, 0, 0, 0]; // índice de cada carrusel
 
+
+const flagsElement = document.getElementById('flags');
+
+const textsToChange = document.querySelectorAll('[data-section]');
+
+const changeLanguage = async (language) => {
+  const requestJson = await fetch(`./languages/${language}.json`);
+  const texts = await requestJson.json();
+
+  for(textToChange of textsToChange){
+     const section = textToChange.dataset.section;
+     const value = textToChange.dataset.value;
+
+     textToChange.innerHTML = texts[section][value];
+  }
+  
+};
+
+flagsElement.addEventListener('click', (e) => {
+  changeLanguage(e.target.parentElement.dataset.lenguage);
+});
+
 function showSlides(n, carouselId) {
   const slides = document.querySelectorAll(`#${carouselId} .carousel-image`);
   const thumbnails = document.querySelectorAll(`#thumbnails${carouselId.charAt(carouselId.length - 1)} .thumbnail`);
