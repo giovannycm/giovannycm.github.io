@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Proceso de Verificación Perú Courier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Slightly off-white for background */
+            color: #333; /* Dark gray for general text */
+        }
+        .pantone-green {
+            color: #00A651; /* Pantone 381 Green equivalent */
+        }
+        .bg-pantone-green-light {
+            background-color: #E6F5EC; /* Lighter shade of the green for subtle accents */
+        }
+        .border-pantone-green {
+            border-color: #00A651;
+        }
+        .step-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-lg */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 2rem; /* mb-8 */
+            transition: transform 0.2s ease-in-out;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+        .step-number {
+            background-color: #00A651;
+            color: #ffffff;
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px; /* rounded-full */
+            font-weight: bold;
+            flex-shrink: 0; /* Prevent shrinking when text is long */
+            margin-right: 1rem;
+        }
+        .step-arrow {
+            color: #00A651;
+            font-size: 3rem; /* Larger arrow for visual flow */
+            text-align: center;
+            margin: 1rem 0;
+            line-height: 0; /* Remove extra space for the arrow */
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .step-card {
+                padding: 1rem;
+            }
+            .step-number {
+                width: 2rem;
+                height: 2rem;
+                font-size: 0.9rem;
+                margin-right: 0.75rem;
+            }
+            .step-arrow {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold pantone-green mb-4">
+            PROCESO DE VERIFICACIÓN PERU COURIER
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-700">
+            PERU COURIER VERIFICATION PROCESS
+        </h2>
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-700">
+            PROCESSO DE VERIFICAÇÃO PERU COURIER
+        </h2>
+        <p class="text-gray-600 mt-4">
+            Una guía clara para el proceso de verificación de documentos de conductores en Watch Docs 1.0.
+            <br>
+            A clear guide for the driver document verification process in Watch Docs 1.0.
+            <br>
+            Um guia claro para o processo de verificação de documentos de motoristas no Watch Docs 1.0.
+        </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+
+        <!-- Step 1 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">1</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Abrir el sistema WD 1.0 y seleccionar el apartado Verificación en linea, luego seleccionar el país a verificar (Peru).
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Open the WD 1.0 system and select the "Online Verification" section, then select the country to be verified (Peru).*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Abrir o sistema WD 1.0 e selecionar a seção "Verificação Online", depois selecionar o país a ser verificado (Peru).*
+                </p>
+                <img src="1.png" alt="Sistema Watch Docs 1.0" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">2</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Seleccionar el ID del Transporte la modalidad "Repartidor en moto" como ejemplo. Verificar que en el estatus este marcada la opción "En verificación" y luego dar click en el botón Buscar.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Select the "Repartidor en moto" transport ID as an example. Verify that the "State" option is "En verificación" and then click the "Buscar" button.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Selecionar o ID de Transporte da modalidade "Entregador de moto" como exemplo. Verificar se o status está marcado como "Em verificação" e depois clicar no botão "Buscar".*
+                </p>
+                <img src="2.png" alt="Selección de Modalidad y Búsqueda" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">3</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Se mostrarán los resultados de la búsqueda. Al final de cada fila, hay un enlace que dice "Revisar". Al hacer clic en este enlace, serás redirigido a la solicitud del conductor.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *The search results will be displayed. At the end of each row, there is a "Revisar" link. Clicking this link will redirect you to the driver's application.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Os resultados da busca serão exibidos. No final de cada linha, há um link que diz "Revisar". Ao clicar neste link, você será redirecionado para a solicitação do motorista.*
+                </p>
+                <img src="3.png" alt="Resultados de Búsqueda y Enlace Revisar" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">4</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Verificar la barra superior (verde significa que se puede trabajar, rojo significa que alguien más está en ella). Revisar el número de teléfono: la lada debe ser 51 (Perú). Si la lada no coincide, la solicitud debe ser rechazada.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Check the top bar (green means it's available to work on, red means someone else is on it). Check the phone number: the area code must be 51 (Peru). If the area code does not match, the application must be rejected.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Verificar a barra superior (verde significa que pode ser trabalhado, vermelho significa que outra pessoa está nela). Verificar o número de telefone: o DDD deve ser 51 (Peru). Se o DDD não coincidir, a solicitação deve ser rejeitada.*
+                </p>
+                <img src="4.png" alt="Validación de Barra de Estado y Teléfono" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">5</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Cada documento tiene un menú desplegable con opciones para rechazar por un motivo específico. Al pasar el cursor sobre una imagen, se ampliará; también puedes hacer clic en "Editar" para girar o recortar la foto.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Each document has a dropdown menu with options to reject for a specific reason. Hovering over an image will enlarge it; you can also click "Edit" to rotate or crop the photo.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Cada documento tem um menu suspenso com opções para rejeitar por um motivo específico. Ao passar o cursor sobre uma imagem, ela será ampliada; você também pode clicar em "Editar" para girar ou cortar a foto.*
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <img src="5a.png" alt="Opciones de Rechazo" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+                    <img src="5b.png" alt="Edición de Imagen" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+                </div>
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">6</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Revisar la foto de perfil. Debe ser una foto reciente, sin filtros, el rostro debe ser completo y claro. Se aceptan gorras si la frente y las cejas son visibles. No se acepta vestimenta militar, fotos con cigarrillos/bebidas ni en blanco y negro.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Review the profile photo. It must be a recent photo, without filters, and the face must be complete and clear. Hats are accepted if the forehead and eyebrows are visible. Military attire, photos with cigarettes/drinks, or black and white photos are not accepted.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Revisar a foto de perfil. Deve ser uma foto recente, sem filtros, o rosto deve ser completo e claro. Bonés são aceitos se a testa e as sobrancelhas estiverem visíveis. Não são aceitas vestimentas militares, fotos com cigarros/bebidas ou em preto e branco.*
+                </p>
+                <img src="6.png" alt="Revisión de Foto de Perfil" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 7 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">7</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Revisar y corregir el nombre, los apellidos y la fecha de nacimiento para que coincidan con el documento de identidad. Si tiene dos nombres o dos apellidos, se deben capturar ambos.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Review and correct the first name, last name(s), and date of birth to match the ID document. If there are two names or two last names, both must be captured.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Revisar e corrigir o nome, os sobrenomes e a data de nascimento para que coincidam com o documento de identidade. Se tiver dois nomes ou dois sobrenomes, ambos devem ser capturados.*
+                </p>
+                <img src="7.png" alt="Revisión de Datos Personales" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 8 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">8</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Revisar el número de placa. Debe contener solo números y letras, sin símbolos como guiones, puntos o espacios. Si los tiene, deben ser borrados.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Review the license plate number. It should contain only numbers and letters, without symbols like hyphens, periods, or spaces. If any are present, they must be deleted.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Revisar o número da placa. Deve conter apenas números e letras, sem símbolos como hífens, pontos ou espaços. Se os tiver, devem ser apagados.*
+                </p>
+                <img src="8.png" alt="Revisión de Número de Placa" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 9 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">9</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Revisar la foto de confirmación de identidad. El conductor debe sostener su licencia de conducir vigente. La cara y el documento deben ser claramente visibles. No se aceptan ediciones ni copias, a excepción de documentos digitales.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Review the identity confirmation photo. The driver must be holding their current driver's license. The face and the document must be clearly visible. Edits and copies are not accepted, with the exception of digital documents.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Revisar a foto de confirmação de identidade. O motorista deve segurar sua carteira de motorista válida. O rosto e o documento devem ser claramente visíveis. Edições e cópias não são aceitas, com exceção de documentos digitais.*
+                </p>
+                <img src="9.png" alt="Confirmación de Identidad" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 10 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">10</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Revisar el número de licencia/identificación. Si es licencia, capturar tal cual (con guiones/letras). Si es cédula, capturar solo el número. El documento debe estar vigente, legible y sin ediciones. En Lima se requiere licencia de conducir, en otras ciudades la cédula de identidad.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Review the license/ID number. If it's a license, capture it exactly as it appears (with hyphens/letters). If it's an ID, capture only the number. The document must be current, legible, and unedited. In Lima, a driver's license is required; in other cities, an ID card is sufficient.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Revisar o número da licença/identificação. Se for licença, capturar tal qual (com hífens/letras). Se for cédula, capturar apenas o número. O documento deve estar vigente, legível e sem edições. Em Lima é exigida carteira de motorista, em outras cidades a cédula de identidade.*
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <img src="10a.png" alt="Revisión de Identificación" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+                    <img src="10b.png" alt="Ejemplo de Cédula Azul" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+                </div>
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 11 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">11</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    El año de fabricación del vehículo es opcional pero se recomienda poner el año en curso. Para “repartidor en moto” la marca debe ser “MOTORBIKE”. Para “repartidor en auto” la marca es “MOTORBIKE” pero se busca el modelo y el color se deja tal cual.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *The vehicle's year of manufacture is optional but the current year is recommended. For "repartidor en moto," the brand must be "MOTORBIKE." For "repartidor en auto," the brand is "MOTORBIKE," but you must search for the car model and leave the color as is.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *O ano de fabricação do veículo é opcional, mas recomenda-se colocar o ano corrente. Para "entregador de moto", a marca deve ser "MOTORBIKE". Para "entregador de carro", a marca é "MOTORBIKE", mas você deve procurar o modelo e a cor é mantida como está.*
+                </p>
+                <img src="11.png" alt="Año de Fabricación y Marca del Vehículo" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 12 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">12</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Revisar los antecedentes penales. Hay 4 tipos y se aceptan capturas de pantalla de otras apps. Estos documentos tienen un año de vigencia a partir de su fecha de expedición.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Review the criminal background certificate. There are 4 types and screenshots from other apps are accepted. These documents are valid for one year from their date of issue.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Revisar os antecedentes criminais. Existem 4 tipos e capturas de tela de outros aplicativos são aceitas. Esses documentos têm validade de um ano a partir da data de expedição.*
+                </p>
+                <img src="12.png" alt="Certificado de Antecedentes Penales" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 13 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">13</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    En casos de suplantación de identidad o incumplimiento de requisitos, seleccionar los motivos de rechazo comunes al final del formulario. Se pueden seleccionar motivos específicos para cada documento y un motivo general.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *In cases of identity theft or non-compliance with requirements, select the common rejection reasons at the end of the form. Specific reasons can be selected for each document and a general reason can be chosen.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Em casos de suplantacão de identidade ou descumprimento de requisitos, selecionar os motivos de rejeição comuns no final do formulário. Podem ser selecionados motivos específicos para cada documento e um motivo geral.*
+                </p>
+                <img src="13.png" alt="Motivos de Rechazo" class="w-full h-auto rounded-md shadow-sm border border-gray-200">
+            </div>
+        </div>
+        <div class="step-arrow text-center">
+            &darr;
+        </div>
+
+        <!-- Step 14 -->
+        <div class="step-card flex items-start">
+            <div class="step-number">14</div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold pantone-green mb-2">
+                    Una vez aceptada o rechazada la cuenta, la página debe cambiar de estado. Si la página no cambia y aparece un recuadro rojo de cuentas duplicadas, el equipo no trabajará en esa solicitud.
+                </h3>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Once the account is accepted or rejected, the page status should change. If the page doesn't change and a red box for duplicate accounts appears, the team will not work on that application.*
+                </p>
+                <p class="text-gray-700 text-base md:text-lg mb-4">
+                    *Uma vez aceita ou rejeitada a conta, a página deve mudar de status. Se a página não mudar e aparecer um quadro vermelho de contas duplicadas, a equipe não trabalhará nessa solicitação.*
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="max-w-5xl mx-auto text-center mt-12 pt-8 border-t border-gray-300">
+        <p class="text-gray-600 text-lg">
+            ¡Esperamos que esta infografía te sea de gran utilidad!
+            <br>
+            We hope this infographic is very useful for you!
+            <br>
+            Esperamos que esta infografia seja de grande utilidade para você!
+        </p>
+    </div>
+
+</body>
+</html>
